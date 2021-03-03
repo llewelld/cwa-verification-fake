@@ -37,19 +37,27 @@ const guidsToRegToken = {
   // GUID = 3BF1D4-1C6003DD-733D-41F1-9F30-F85FA7406BF7
   "75552e6e1dae7a520bad64e92b7569447d0f5ca3c539335e0418a7695606147e": "7f86c6fd-5c66-4003-abb1-4eee36680c9b",
   // GUID = 3D6D08-3567F3F2-4DCF-43A3-8737-4CD1F87D6FDA
-  "49cadef62bc9cdd16c73a044d1ff85e229cfc7a308ef4413d42af8276c9e4e98": "b3586b13-280f-4a6d-8b54-5fbf8fb8d550"
+  "49cadef62bc9cdd16c73a044d1ff85e229cfc7a308ef4413d42af8276c9e4e98": "b3586b13-280f-4a6d-8b54-5fbf8fb8d550",
+  // GUID = C16706-A87C5F11-EBB9-F6FB-351A-1810EB9F6FB3
+  "054473c6e762ac1d65b44f70727f91690241bc0d2d52f7207edada1978dc61d8": "3d8904cf-3084-4595-b48b-864a57b29d79",
+  // GUID = C0C465-E01E7142-E2BE-615D-1F98-C318245AE8B1
+  "65134c26144d157c96afb39b7b029b8ed05238008343416a544266b3fe1b3872": "cb8ceb80-0aa4-4e32-9780-4f20348e4bdf"
 };
 
 // Registration tokens accepted by /version/v1/tan
 const regTokenToTan = {
   "7f86c6fd-5c66-4003-abb1-4eee36680c9b": "edc07f08-a1aa-11ea-bb37-0242ac130002",
-  "b3586b13-280f-4a6d-8b54-5fbf8fb8d550": "edc07f08-a1aa-11ea-bb37-0242ac130002"
+  "b3586b13-280f-4a6d-8b54-5fbf8fb8d550": "edc07f08-a1aa-11ea-bb37-0242ac130002",
+  "3d8904cf-3084-4595-b48b-864a57b29d79": "edc07f08-a1aa-11ea-bb37-0242ac130002",
+  "cb8ceb80-0aa4-4e32-9780-4f20348e4bdf": "edc07f08-a1aa-11ea-bb37-0242ac130002"
 };
 
 // Registration tokens accepted by /version/v1/testresult
 const regTokenToTestResult = {
     "7f86c6fd-5c66-4003-abb1-4eee36680c9b": {testResult: 1, chance: 0.1},
-    "b3586b13-280f-4a6d-8b54-5fbf8fb8d550": {testResult: 2, chance: 0.1}
+    "b3586b13-280f-4a6d-8b54-5fbf8fb8d550": {testResult: 2, chance: 0.1},
+    "3d8904cf-3084-4595-b48b-864a57b29d79": {testResult: 1, chance: 1.0},
+    "cb8ceb80-0aa4-4e32-9780-4f20348e4bdf": {testResult: 2, chance: 1.0}
 }
 
 const server_port = process.env.PORT || 8004;
